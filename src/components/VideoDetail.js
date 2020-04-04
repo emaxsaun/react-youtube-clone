@@ -5,8 +5,6 @@ import { Paper, Typography } from "@material-ui/core";
 const VideoDetail = ({ video }) => {
   if (!video) return <div>Loading...</div>;
 
-  console.log(video);
-
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}?autoplay=1`;
 
   return (
